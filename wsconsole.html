@@ -1,0 +1,79 @@
+<html>
+	
+	<head>
+		<title>Tom_The_Geek - WebSocket console</title>
+		
+		<style>
+			ul {
+				list-style: none;
+			}
+		</style>
+	</head>
+	
+	<body>
+		<div id="settings" style="display: block;">
+			<input id="address" type="text" onkeypress="onkey(event)">
+			<button onclick="connect()">Connect!</button>
+		</div>
+		
+		<div id="console" style="display: none;">
+			<input id="messageIn" type="text" onkeypress="onkey(event)">
+			<button onclick="send()">Send!</button>
+			<ul id="messages"></ul>
+		</div>
+		
+		<script>
+			const messages = document.getElementById("messages")
+			const input = document.getElementById("messageIn")
+			const settings = document.getElementById("settings")
+			const addressBox = document.getElementById("address")
+			const consoleElement = document.getElementById("console")
+			ws = null;
+
+			function onkey(event) {
+				if (event.key == "Enter" || event.which == 13 || event.keyCode == 13) {
+					if (ws) {
+						send()
+					} else {
+						connect()
+					}
+				}
+			}
+
+			function addMessage(msg) {
+				var ele = document.createElement("li");
+				ele.innerHTML = msg;
+				messages.appendChild(ele);
+			}
+
+			function connect() {
+				settings.style.display = "none"
+				consoleElement.style.display = "block"
+			
+				ws = new WebSocket("ws://" + addressBox.value)
+				ws.onopen = function(event) {
+					addMessage("Connected!")
+				}
+
+				ws.onerror = function(event) {
+					addMessage("Error: " + event.toString())
+				}
+
+				ws.onmessage = function(event) {
+					addMessage("<= " + event.data)
+				}
+
+				ws.onclose = function(event) {
+					addMessage("Closed! Code: " + event.code + " Message: " + event.reason)
+				}
+			}
+			
+			function send() {
+				var m = input.value
+				addMessage("=> " + m)
+				ws.send(m)
+				input.value = ""
+			}
+		</script>
+	</body>
+</html>
