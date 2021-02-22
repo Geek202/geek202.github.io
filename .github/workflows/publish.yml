@@ -11,9 +11,13 @@ jobs:
     steps:
       - name: Checkout code.
         uses: actions/checkout@v2
-      # Build & deploy
-      - name: Deploy to gh-pages branch
-        uses: shalzz/zola-deploy-action@v0.13.0
-        env:
-          PAGES_BRANCH: gh-pages
-          TOKEN: ${{ github.token }}
+      - name: Install zola
+        run: sudo snap install --edge zola
+      - name: Build site
+        run: zola build
+      - name: Deploy to gh-pages
+        uses: JamesIves/github-pages-deploy-action@3.6.2
+        with:
+          GITHUB_TOKEN: ${{ github.token }}
+          BRANCH: gh-pages
+          FOLDER: public/
