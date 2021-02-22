@@ -5,7 +5,7 @@ slug = "toms-server-utils"
 date = 2020-11-24
 
 [extra]
-thumbnail = "/assets/images/server_utils.png"
+thumbnail = "/assets/icons/server_utils.png"
 links = [
     { type = "github", url = "https://github.com/Geek202/TomsServerUtils" },
     { type = "modrinth", url = "https://modrinth.com/mod/toms-server-utils/" },

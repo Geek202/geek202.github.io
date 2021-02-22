@@ -5,7 +5,6 @@ slug = "server-launcher"
 date = 2021-01-21
 
 [extra]
-# thumbnail = "/assets/images/server_utils.png"
 links = [
     { type = "github", url = "https://github.com/Geek202/server-launcher" },
     { type = "github", url = "https://github.com/Geek202/server-restarter" },
