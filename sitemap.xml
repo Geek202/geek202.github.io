@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <url>
+        <loc>https://tomthegeek.ml/</loc>
+    </url>
+    <url>
+        <loc>https://tomthegeek.ml/blog/</loc>
+    </url>
+    <url>
+        <loc>https://tomthegeek.ml/blog/welcome/</loc>
+        <lastmod>2021-02-22</lastmod>
+    </url>
+    <url>
+        <loc>https://tomthegeek.ml/projects/</loc>
+    </url>
+    <url>
+        <loc>https://tomthegeek.ml/projects/better-background/</loc>
+        <lastmod>2021-02-09</lastmod>
+    </url>
+    <url>
+        <loc>https://tomthegeek.ml/projects/dark-meeting/</loc>
+        <lastmod>2021-02-10</lastmod>
+    </url>
+    <url>
+        <loc>https://tomthegeek.ml/projects/server-launcher/</loc>
+        <lastmod>2021-01-21</lastmod>
+    </url>
+    <url>
+        <loc>https://tomthegeek.ml/projects/toms-server-utils/</loc>
+        <lastmod>2020-11-24</lastmod>
+    </url>
+</urlset>
