@@ -1,0 +1,61 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h1 class="title">
+    {{ page.title }}
+    {% for tag in page.extra.tags %}
+        <span class="tag">
+            {{ tag }}
+        </span>
+    {% endfor %}
+</h1>
+
+{% for link in page.extra.links %}
+
+{% if link.type == "github" %}
+
+<a class="button is-link is-light is-rounded" href="{{ link.url }}">
+    <span class="icon-text">
+        <span class="icon is-large">
+            <i class="fab fa-lg fa-github"></i>
+        </span>
+        <span>GitHub</span>
+    </span>
+</a>
+
+{% elif link.type == "modrinth" %}
+
+<a class="button is-primary is-light is-rounded" href="{{ link.url }}">
+    <span class="icon-text">
+        <span class="icon is-large">
+            <i class="fab fa-lg fa-github"></i>
+        </span>
+        <span>Modrinth</span>
+    </span>
+</a>
+
+{% else %}
+
+<a class="button is-info is-light is-rounded" href="{{ link.url }}">
+    <span class="icon-text">
+        <span class="icon is-large">
+            <i class="fab fa-lg fa-home"></i>
+        </span>
+        <span>Site</span>
+    </span>
+</a>
+
+{% endif %}
+
+{% endfor %}
+
+<br><br>
+
+<p class="subtitle">
+    <strong>
+        {{ page.description }}
+    </strong>
+</p>
+
+{{ page.content | safe }}
+{% endblock content %}

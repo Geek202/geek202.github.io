@@ -1,0 +1,41 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h1 class="title">
+    {{ section.title }}
+</h1>
+<ul>
+    {% for page in section.pages %}
+    <li>
+        <div class="card">
+            <div class="card-content">
+                <div class="media">
+                    {% if page.extra.thumbnail %}
+                    <div class="media-left">
+                        <figure class="image is-48x48">
+                            <img src="{{ page.extra.thumbnail }}" alt="Placeholder image">
+                        </figure>
+                    </div>
+                    {% endif %}
+                    <div class="media-content">
+                        <p class="title is-4">
+                            <a href="{{ page.permalink | safe }}">
+                                {{ page.title }}
+                            </a>
+                            {% for tag in page.extra.tags %}
+                                <span class="tag">
+                                    {{ tag }}
+                                </span>
+                            {% endfor %}
+                        </p>
+                        <p class="subtitle is-6">
+                            {{ page.description }}
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </li>
+    {% endfor %}
+</ul>
+{% endblock content %}
