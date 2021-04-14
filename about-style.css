@@ -1,0 +1,44 @@
+/* https://ilikekillnerds.com/2016/04/unordered-list-style-using-dashhyphen/ */
+ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+ul > li {
+    margin-left: 15px;  
+}
+
+ul > li::before {
+    content: "– ";
+    font-weight: bold;
+    margin-left: -15px;
+}
+
+code {
+    color: #bd93f9;
+}
+
+a {
+    color: #bd93f9;
+}
+
+@media (prefers-color-scheme: dark) {
+    code {
+        color: #bd93f9;
+    }
+
+    a {
+        color: #bd93f9;
+    }
+}
+
+h1 > .emoji {
+    width: 38px;
+    height: 38px;
+}
+
+.emoji {
+    width: 22px;
+    height: 22px;
+    vertical-align: bottom;
+}
