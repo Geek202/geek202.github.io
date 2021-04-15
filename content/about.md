@@ -5,7 +5,7 @@ template = "about-page.html"
 
 Here's a few things you might want to know about me:
 - My name's Tom
-- I prefer the pronouns `they/them`, but I won't be annoyed if you call me he/she :)
+- I go by the pronouns `they/them`, but I won't be annoyed if you call me he/she :)
 - I'm a student and developer from the UK.
 - `This` is a colour that I find quite nice
 - I like write `code`...
