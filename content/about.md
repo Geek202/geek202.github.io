@@ -8,7 +8,7 @@ Here's a few things you might want to know about me:
 - I go by the pronouns `they/them`, but I won't be annoyed if you call me he/she :)
 - I'm a student and developer from the UK.
 - `This` is a colour that I find quite nice
-- I like write `code`...
+- I like to write `code`...
 - ...and my favourite programming languages to write are `Kotlin` and `Java`.
 - I've also enjoyed writing a few things in `Rust`, but I'm still learning
 -  I find `JavaScipt` annoying, and so prefer `TypeScript`.
