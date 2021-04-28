@@ -1,0 +1,2 @@
+# Config for github pages
+include: [".well-known"]
