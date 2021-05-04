@@ -1,5 +1,26 @@
 {% extends "base.html" %}
 
+{% block head %}
+<meta property="og:type" content="website">
+<meta property="og:title" content="{{ page.title }} - Tom_The_Geek">
+<meta property="og:url" content="{{ current_url }}">
+{% if page.extra.thumbnail %}
+<meta property="og:image" content="{{ page.extra.thumbnail }}">
+{% else %}
+<meta property="og:image" content="https://tomthegeek.ml/assets/icons/icon.png">
+{% endif %}
+
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="{{ page.title }} - Tom_The_Geek">
+<meta name="twitter:description" content="{{ page.description }}">
+{% if page.extra.thumbnail %}
+<meta property="twitter:image" content="{{ get_url(path=page.extra.thumbnail) }}">
+{% else %}
+<meta property="twitter:image" content="https://tomthegeek.ml/assets/icons/icon.png">
+{% endif %}
+
+{% endblock head %}
+
 {% block content %}
 <h1 class="title">
     {{ page.title }}

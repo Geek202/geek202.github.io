@@ -2,6 +2,17 @@
 
 {% block head %}
 <link rel="stylesheet" href="/about-style.css">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="About - Tom_The_Geek">
+<meta property="og:url" content="{{ current_url }}">
+<meta property="og:image" content="https://tomthegeek.ml/assets/icons/icon.png">
+
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="About - Tom_The_Geek">
+<meta name="twitter:description" content="{{ page.description }}">
+<meta name="twitter:image" content="https://tomthegeek.ml/assets/icons/icon.png">
+
 {% endblock head %}
 
 {% block content %}
