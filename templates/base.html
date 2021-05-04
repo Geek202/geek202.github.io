@@ -18,7 +18,7 @@
                 <img src="/assets/icons/icon.png" alt="icon" width="28">
             </a>
         </div>
-        <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+        <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" id="menu-button">
             <span aria-hidden="true"></span>
             <span aria-hidden="true"></span>
             <span aria-hidden="true"></span>
@@ -53,6 +53,11 @@
             ext: ".svg",
             size: "svg"
         });
+
+        document.getElementById("menu-button").onclick = function() {
+            document.getElementById("menu-button").classList.toggle('is-active');
+            document.getElementById("navbarMain").classList.toggle('is-active');
+        }
     </script>
 </body>
 
