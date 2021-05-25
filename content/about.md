@@ -13,9 +13,9 @@ Here's a few things you might want to know about me:
 - I've also enjoyed writing a few things in `Rust`, but I'm still learning
 -  I find `JavaScipt` annoying, and so prefer `TypeScript`.
 - This website is built with [Zola](https://getzola.org), using `HTML`, `Markdown` and a pinch of `CSS`
-- You can find me on a few different places, including [<i class="fab fa-discord"></i> Discord](https://discord.gg/tCAWpDsBmh), [<i class="fab fa-github"></i> GitHub](https://github.com/Geek202), [<i class="fab fa-youtube"></i> YouTube](https://youtube.com/channel/UCnY3mByJrN6ZbUC7PAAeySw/), [<i class="fab fa-twitch"></i> Twitch](https://twitch.tv/tom_the_geek) and [Matrix](https://matrix.to/#/@tom:tomthegeek.ml)
+- You can find me on a few different places, including [<i class="fab fa-discord"></i> Discord](https://discord.gg/tCAWpDsBmh), [<i class="fab fa-github"></i> GitHub](https://github.com/Tom-The-Geek/), [<i class="fab fa-youtube"></i> YouTube](https://youtube.com/channel/UCnY3mByJrN6ZbUC7PAAeySw/), [<i class="fab fa-twitch"></i> Twitch](https://twitch.tv/tom_the_geek) and [Matrix](https://matrix.to/#/@tom:tomthegeek.ml)
 - Many of my projects are `Minecraft mods` (check them out on [CurseForge](https://www.curseforge.com/members/tom_the_geek/projects) and [Modrinth](https://modrinth.com/user/Geek202) 😉), but I've also messed with
   - [Discord bots](https://top.gg/bot/637593441194344470)
-  - React.js and [Vue.js](https://github.com/Geek202/CardGameClient)
-  - [Raspberry Pi](https://github.com/Geek202/thread)
+  - [React.js](https://github.com/Tom-The-Geek/read-about-me) and [Vue.js](https://github.com/Tom-The-Geek/CardGameClient)
+  - [Raspberry Pi](https://github.com/Tom-The-Geek/thread)
 - I also think Twemoji is pretty cool, which is why I used them for all the emoji on this website 🙃

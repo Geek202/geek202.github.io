@@ -7,7 +7,7 @@ date = 2021-02-10
 [extra]
 thumbnail = "/assets/icons/dark-meeting.png"
 links = [
-    { type = "github", url = "https://github.com/Geek202/dark-meeting" },
+    { type = "github", url = "https://github.com/Tom-The-Geek/dark-meeting" },
     { type = "", url = "https://addons.mozilla.org/en-US/firefox/addon/dark-meeting/" }
 ]
 tags = [ "Chrome", "JavaScript", "CSS" ]

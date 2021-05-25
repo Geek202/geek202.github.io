@@ -7,7 +7,7 @@ date = 2021-04-21
 [extra]
 links = [
     { type = "", url = "https://read-about-me.vercel.app/" },
-    { type = "github", url = "https://github.com/Geek202/read-about-me" }
+    { type = "github", url = "https://github.com/Tom-The-Geek/read-about-me" }
 ]
 tags = [ "Webdev", "Typescript", "React" ]
 +++

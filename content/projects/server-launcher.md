@@ -6,8 +6,8 @@ date = 2021-01-21
 
 [extra]
 links = [
-    { type = "github", url = "https://github.com/Geek202/server-launcher" },
-    { type = "github", url = "https://github.com/Geek202/server-restarter" },
+    { type = "github", url = "https://github.com/Tom-The-Geek/server-launcher" },
+    { type = "github", url = "https://github.com/Tom-The-Geek/server-restarter" },
 ]
 tags = [ "Minecraft", "Fabric", "Mods", "Java", "Rust" ]
 +++

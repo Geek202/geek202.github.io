@@ -7,7 +7,7 @@ date = 2020-11-24
 [extra]
 thumbnail = "/assets/icons/server-utils.png"
 links = [
-    { type = "github", url = "https://github.com/Geek202/TomsServerUtils" },
+    { type = "github", url = "https://github.com/Tom-The-Geek/TomsServerUtils" },
     { type = "modrinth", url = "https://modrinth.com/mod/toms-server-utils/" },
 ]
 tags = [ "Minecraft", "Fabric", "Mods", "Java", "Kotlin" ]
